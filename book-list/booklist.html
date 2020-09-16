@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booklist.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" i ntegrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+
+    <title>booklist</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="list-title">
+            <i class="fas fa-book-open"></i>
+            <span class="text-primary">My book List</span>
+        </h1>
+        <form id="book-form">
+            <div class="form-wrap">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="user-input" />
+            </div>
+            <div class="form-wrap">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="user-input" />
+            </div>
+            <div class="form-wrap">
+                <label for="isbn">ISBN</label>
+                <input type="text" id="isbn" class="user-input">
+            </div>
+            <input type="submit" value="add" class="btn" />
+
+        </form>
+        <div class="table-container">
+            <div class="table-wrap" id="book-list">
+                <div class="table-row header">
+                    <div class="table-cell">Title</div>
+                    <div class="table-cell">Author</div>
+                    <div class="table-cell">ISBN</div>
+                    <div class="table-cell"></div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    </div>
+
+
+</body>
+<script src="booklist.js"></script>
+
+</html>

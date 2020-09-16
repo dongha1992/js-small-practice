@@ -1,0 +1,134 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Montserrat", 'NaumGothic', Arial, Helvetica, sans-serif;
+        background-color: bisque
+    }
+    
+    .container {}
+    
+    .cross-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15px;
+        color: white;
+    }
+    
+    .far {
+        padding-right: 20px;
+        font-size: 10px;
+        align-self: center;
+        cursor: pointer;
+    }
+    
+    header {
+        height: 8vh;
+        background-color: aliceblue;
+    }
+    
+    main {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    main .left {
+        padding-right: 20px;
+        padding-left: 40px;
+        min-width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main .left .left-wrap h2 {
+        font-size: 35px;
+        padding-top: 20px;
+    }
+    
+    main .left .left-wrap .left-content .left-content-lists {
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 20px 0px;
+    }
+    
+    main .left .left-wrap .left-content .left-content-lists .left-content-list {
+        width: 80%;
+        padding: 10px 0px;
+        overflow: scroll;
+        display: flex;
+    }
+    
+    main .left .trash-wrap .trash-content .trash-content-lists .trash-content-list {}
+    
+    main .left .left-wrap .left-input input {
+        width: 80%;
+        background: none;
+        border-bottom: 1px solid black !important;
+        border: none;
+        outline: none;
+        padding-bottom: 10px;
+        font-size: 30px;
+    }
+    
+    main .right {
+        padding-top: 30px;
+        width: 50%;
+    }
+    
+    main .right .right-wrap {
+        max-width: 600px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: white;
+    }
+    
+    main .right .right-wrap .right-header {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 20px 40px;
+    }
+    
+    main .right .right-wrap .right-header .right-header-todo {
+        font-size: 20px;
+        align-self: center;
+    }
+    
+    main .right .right-wrap .right-header .right-header-count {
+        font-size: 10px;
+        align-self: center;
+    }
+    
+    main .right .right-wrap .right-content .right-content-lists {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 20px 0px;
+    }
+    
+    main .right .right-wrap .right-content .right-content-lists .right-content-list {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        width: 80%;
+        align-self: center;
+        padding: 20px 0px;
+    }
+    
+    main .right .right-wrap .right-input {
+        padding: 10px 40px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    main .right .right-wrap .right-input input {
+        padding: 10px 0px;
+        background: none;
+        border-bottom: 1px solid black !important;
+        border: none;
+        outline: none;
+    }

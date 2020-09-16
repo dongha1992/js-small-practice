@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+
+.container .canvas {
+    box-shadow: 3px 3px 5px grey;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+
+.container .form-wrap {
+    padding: 10px 0;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+}
+
+.container .form-wrap .button-wrap {
+    padding: 10px 0;
+    display: flex;
+}
+
+.container .form-wrap .button-wrap button {
+    margin-left: 10px;
+    width: 50px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+.container .form-wrap .button-wrap button:active {
+    transform: scale(0.96);
+}
+
+.container .color-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.color {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 1px;
+}
+
+.color:nth-child(1) {
+    background-color: darkblue;
+}
+
+.color:nth-child(2) {
+    background-color: white;
+}
+
+.color:nth-child(3) {
+    background-color: black;
+}
+
+.color:nth-child(4) {
+    background-color: yellow;
+}
+
+.color:nth-child(5) {
+    background-color: orange;
+}
+
+.color:nth-child(6) {
+    background-color: red;
+}
+
+.color:nth-child(7) {
+    background-color: green;
+}
+
+.color:nth-child(8) {
+    background-color: gray;
+}
+
+.color:nth-child(9) {
+    background-color: navajowhite;
+}

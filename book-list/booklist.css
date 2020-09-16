@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+form .form-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+form .form-wrap input {
+    padding: 5px 0px;
+}
+
+.table-container {
+    overflow: scroll;
+    width: 80%;
+}
+
+.table-container .table-wrap {
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+.table-container .table-wrap .table-row {
+    padding: 30px 0px;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.table-container .table-wrap .header {
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.alert-danger {
+    background: #eb4034;
+    padding: 20px 40px;
+    min-width: 320px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background: #6bbf54;
+    padding: 20px 40px;
+    min-width: 320px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 4px;
+}
+
+.alert .fa-exclamation-circle {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.alert {
+    padding: 20px 50px;
+    font-size: 20px;
+    color: white;
+}
+
+.show {
+    animation: show_slide 1s ease forwards;
+}
+
+@keyframes show_slide {
+    0% {
+        transform: translateX(100%);
+    }
+    40% {
+        transform: translateX(-10%);
+    }
+    80% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.hide {
+    animation: hide_slide 1s ease forwards;
+}
+
+@keyframes hide_slide {
+    0% {
+        transform: translateX(-10px);
+    }
+    40% {
+        transform: translateX(0%);
+    }
+    80% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(110%);
+    }
+}
+
+#book-title,
+#book-author,
+#book-isbn {
+    width: 20%;
+}
+
+.table-row:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.btn {
+    padding: 10px;
+    font-size: 20px;
+    background-color: white;
+    text-decoration: none;
+    width: 100%;
+}

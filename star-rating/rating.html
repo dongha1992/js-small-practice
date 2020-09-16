@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" i ntegrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+    <link rel="stylesheet" href="rating.css">
+    <title>rating</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content">
+            <div class="form-responsive">
+                <div class="form-wrap">
+                    <select class="user-select-product" id="">
+                <option value="0" disabled selected>select product</option>
+                <option value="iphone">iphone</option>
+                <option value="lg">lg</option>
+                <option value="samsung">samsung</option>
+                <option value="mac">mac</option>  
+                <option value="dongha">dongha</option>         
+            </select>
+                </div>
+                <div class="form-wrap">
+                    <input type="number" class="user-rating-product" id="" placeholder="rating 0 ~ 5" step="0.5" max="max" disabled>
+                </div>
+            </div>
+            <div class="table-grid">
+                <div class="table-header">
+                    <div class="table-header-name">
+                        <h1>Product</h1>
+                    </div>
+                    <div class="table-header-rating">
+                        <h1>Rating</h1>
+                    </div>
+                </div>
+                <div class="table-item">
+                    <span class="item-name">iphone</span>
+                    <div class="iphone">
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </div>
+                </div>
+                <div class="table-item">
+                    <span class="item-name">LG Gram</span>
+                    <div class="lg">
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </div>
+                </div>
+                <div class="table-item">
+                    <span class="item-name">Samsung</span>
+                    <div class="samsung">
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </div>
+                </div>
+                <div class="table-item">
+                    <span class="item-name">Mac book</span>
+                    <div class="mac">
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </div>
+                </div>
+                <div class="table-item">
+                    <span class="item-name">dongha</span>
+                    <div class="dongha">
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+<script src="rating.js"></script>
+
+</html>

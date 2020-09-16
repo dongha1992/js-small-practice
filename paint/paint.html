@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" i ntegrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+    <link rel="stylesheet" href="paint.css">
+    <title>painting</title>
+</head>
+
+<body>
+    <div class="container">
+        <canvas class="canvas" id="js-canvas">
+
+        </canvas>
+        <div class="form-wrap">
+            <input type="range" class="color-range" min="0.1" max="5" value="2.5" step=0.1>
+            <div class="button-wrap">
+                <button class="mode">Paint</button>
+                <button class="save-btn">Save</button>
+            </div>
+
+        </div>
+        <div class="color-wrap">
+            <div class="color" style="background-color: black;"></div>
+            <div class="color" style="background-color: yellow;"></div>
+            <div class="color" style="background-color: red;"></div>
+            <div class="color" style="background-color: green"></div>
+            <div class="color" style="background-color: blue;"></div>
+            <div class="color" style="background-color: white;"></div>
+            <div class="color" style="background-color: navy;"></div>
+            <div class="color" style="background-color: orange;"></div>
+            <div class="color" style="background-color: gray;"></div>
+        </div>
+
+    </div>
+
+
+
+</body>
+<script src="paint.js"></script>
+
+</html>

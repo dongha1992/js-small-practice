@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container input {
+    margin-bottom: 40px;
+}
+
+.container ul {
+    padding: 30px 0;
+    list-style: none;
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+}
+
+.container ul .list-index {
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+
+.container ul .list-item {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.container ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    padding-top: 5px;
+}
