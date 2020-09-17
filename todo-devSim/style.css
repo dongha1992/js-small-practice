@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", 'NaumGothic', Arial, Helvetica, sans-serif;
+    background-color: bisque
+}
+
+.container {}
+
+.delete {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.delete:hover {
+    color: brown;
+}
+
+header {
+    height: 8vh;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+header h1 {
+    opacity: 0.5;
+}
+
+main {
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+main .left {
+    padding-right: 20px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .left .left-wrap h2 {
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.active-list {
+    font-weight: 700;
+    color: black;
+    font-size: 20px;
+}
+
+main .left .left-wrap .left-content .left-content-lists {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    list-style: circle;
+    padding: 20px 5px;
+    color: gray;
+}
+
+main .left .left-wrap .left-content .left-content-lists .left-content-list {
+    padding: 10px 5px;
+    overflow: scroll;
+    cursor: pointer;
+    display: flex;
+}
+
+.left-content-list:hover {
+    opacity: 0.7;
+}
+
+main .left .trash-wrap {
+    padding-top: 30px;
+}
+
+main .left .trash-wrap .trash-content {}
+
+main .left .trash-wrap .trash-content .trash-content-lists {
+    padding-top: 30px;
+    list-style: none;
+}
+
+main .left .trash-wrap .trash-content .trash-content-lists .trash-content-list {
+    padding: 5px 0px;
+    overflow: scroll;
+    display: flex;
+}
+
+main .left .left-wrap .left-input input {
+    width: 80%;
+    background: none;
+    border-bottom: 1px solid black !important;
+    border: none;
+    outline: none;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+main .right {
+    padding-top: 30px;
+    min-width: 50%;
+}
+
+main .right .right-wrap {
+    max-width: 600px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+main .right .right-wrap .right-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+}
+
+main .right .right-wrap .right-header .right-header-todo {
+    font-size: 20px;
+    align-self: center;
+}
+
+main .right .right-wrap .right-header .right-header-count {
+    font-size: 10px;
+    align-self: center;
+}
+
+main .right .right-wrap .right-content .right-content-lists {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px 0px;
+}
+
+main .right .right-wrap .right-content {
+    padding: 0px 20px;
+}
+
+main .right .right-wrap .right-content .right-content-lists .right-content-list {
+    padding: 10px 0px;
+}
+
+[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.right-content-list label {
+    display: flex-inline;
+    align-items: center;
+    position: relative;
+}
+
+.right-content-list {
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.right-content-list::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5em;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.1;
+    right: 0;
+    left: 0;
+}
+
+.custom-checkbox {
+    --size: 10px;
+    width: var(--size);
+    height: var(--size);
+    margin-right: var(--size);
+    display: inline-block;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+}
+
+.right-content-list:hover .custom-checkbox,
+[type="checkbox"]:focus+label .custom-checkbox {
+    transform: scale(1.2);
+    color: gray;
+}
+
+[type="checkbox"]:checked+label .custom-checkbox {
+    box-shadow: inset 0 0 0px 2px white;
+    background: black;
+    border-color: black;
+}
+
+[type="checkbox"]:checked+label {
+    opacity: 0.5;
+}
+
+.right-content-list label::after {
+    content: "";
+    position: absolute;
+    background: currentColor;
+    left: 0;
+    right: 0;
+    left: 20px;
+    top: 50%;
+    height: 3px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 200ms ease-in-out;
+}
+
+[type="checkbox"]:checked+label::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+main .right .right-wrap .right-input {
+    padding: 10px 40px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+main .right .right-wrap .right-input input {
+    padding: 10px 0px;
+    background: none;
+    border-bottom: 1px solid black !important;
+    border: none;
+    outline: none;
+}
+
+.delete-stuff {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -55px;
+    color: gray;
+}
+
+.btn {
+    opacity: 0.7;
+    font-size: 20px;
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    padding: 0;
+    color: inherit;
+}

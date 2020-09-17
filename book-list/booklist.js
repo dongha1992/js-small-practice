@@ -13,9 +13,11 @@ class Book {
 class UI {
     static displayBooks() {
 
-        const books = Store.getBooks();
 
+
+        const books = Store.getBooks();
         books.forEach(book => UI.addBookToList(book))
+
 
     }
     static addBookToList(book) {
@@ -82,6 +84,7 @@ class Store {
     static addBook(book) {
         const books = Store.getBooks()
         books.push(book)
+        console.log(books)
         localStorage.setItem("books", JSON.stringify(books))
     }
     static removeBook(isbn) {
@@ -92,10 +95,7 @@ class Store {
                 books.splice(index, 1)
             }
         })
-
         localStorage.setItem("books", JSON.stringify(books))
-
-
     }
 }
 //event: display books

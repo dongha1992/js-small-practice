@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" i ntegrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">DO-TO-LIST</h1>
+        </header>
+        <main>
+            <section class="left">
+                <div class="left-wrap">
+                    <h2>My Lists</h2>
+                    <div class="left-content">
+                        <ul class="left-content-lists" data-lists>
+
+                        </ul>
+                    </div>
+                    <form class="left-input" data-lists-user-form>
+                        <input type="text" class="left-submit" data-lists-user-input>
+                    </form>
+                </div>
+                <section class="trash">
+                    <div class="trash-wrap">
+                        <div class="trash-content">
+                            <h2>Complete</h2>
+                            <ul class="trash-content-lists">
+
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="right">
+                <div class="right-wrap" data-todo-display-container>
+                    <div class="right-header">
+                        <span class="right-header-todo" data-todo-title>
+                            work
+                        </span>
+                        <div class="right-header-count" data-todo-count>3 left</div>
+                    </div>
+                    <div class="right-content">
+                        <div class="right-content-lists" data-todos>
+                        </div>
+                    </div>
+                    <form class="right-input" data-todo-form>
+                        <input type="text" class="right-submit" data-todo-input>
+                    </form>
+                </div>
+                <div class="delete-stuff">
+                    <button class="btn delete" data-delete-list-button>Delete list</button>
+                    <button class="btn delete" data-clear-completed-todo>Clear completed tasks</button>
+
+                </div>
+            </section>
+
+        </main>
+    </div>
+    <template id="todo-template">
+        <div class="right-content-list">
+            <input type="checkbox"/>
+          <label>
+            <span class="custom-checkbox"></span>  
+         </label>
+        </div>
+
+        </template>
+</body>
+<script src="script.js"></script>
+
+</html>
