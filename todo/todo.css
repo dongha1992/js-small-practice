@@ -11,19 +11,18 @@
     
     .container {}
     
-    .cross-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 15px;
-        color: white;
-    }
-    
-    .far {
+    .delete {
         padding-right: 20px;
+        padding-left: 5px;
         font-size: 10px;
         align-self: center;
         cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .delete:hover {
+        transform: scale(1.1);
+        color: gray;
     }
     
     header {
@@ -40,7 +39,6 @@
     main .left {
         padding-right: 20px;
         padding-left: 40px;
-        min-width: 40%;
         display: flex;
         flex-direction: column;
     }
@@ -60,12 +58,27 @@
     
     main .left .left-wrap .left-content .left-content-lists .left-content-list {
         width: 80%;
-        padding: 10px 0px;
+        padding: 5px 0px;
         overflow: scroll;
         display: flex;
     }
     
-    main .left .trash-wrap .trash-content .trash-content-lists .trash-content-list {}
+    main .left .trash-wrap {
+        padding-top: 30px;
+    }
+    
+    main .left .trash-wrap .trash-content {}
+    
+    main .left .trash-wrap .trash-content .trash-content-lists {
+        padding-top: 30px;
+        list-style: none;
+    }
+    
+    main .left .trash-wrap .trash-content .trash-content-lists .trash-content-list {
+        padding: 5px 0px;
+        overflow: scroll;
+        display: flex;
+    }
     
     main .left .left-wrap .left-input input {
         width: 80%;
@@ -79,7 +92,7 @@
     
     main .right {
         padding-top: 30px;
-        width: 50%;
+        min-width: 50%;
     }
     
     main .right .right-wrap {
