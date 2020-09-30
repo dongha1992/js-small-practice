@@ -36,6 +36,7 @@ todoContainer.addEventListener("click", e => {
         renderTodosCount(selectedList)
     }
 })
+
 todoUserForm.addEventListener("submit", e => {
     e.preventDefault()
     const todoName = todoUserInput.value;
@@ -61,12 +62,12 @@ todoClearBtn.addEventListener("click", e => {
     selectedList.tasks = selectedList.tasks.filter(task => !task.complete)
     saveAndRender()
 })
+
 deleteBtn.addEventListener("click", e => {
     lists = lists.filter(list => list.id !== selectedListId)
     selectedListId = null
     saveAndRender()
 })
-
 
 
 function createList(name) {
@@ -85,8 +86,8 @@ function createTodos(name) {
     }
 }
 
-
 function render() {
+    clock()
     clearElement(listsContainer)
     renderLists()
     const selectedList = lists.find(list => list.id === selectedListId)
@@ -94,11 +95,21 @@ function render() {
         todoDisplayContainer.style.display = "none"
     } else {
         todoDisplayContainer.style.display = "";
-        todoTitleElement.innerText = selectedList.name
+        todoTitleElement.innerText = selectedList.name;
         renderTodosCount(selectedList)
         clearElement(todoContainer)
         renderTasks(selectedList)
     }
+}
+
+function clock() {
+    const timeSpan = document.querySelector(".time")
+    const date = new Date()
+    const hour = date.getHours()
+    const minute = date.getMinutes()
+    const second = date.getSeconds()
+    timeSpan.innerText = `${hour < 10 ? `0${hour}`: hour} : ${minute < 10 ? `0${minute}`: minute} : ${second < 10 ? `0${second}`: second}`
+    setTimeout(clock, 1000)
 }
 
 function renderTasks(selectedList) {

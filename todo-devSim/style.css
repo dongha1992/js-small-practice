@@ -23,7 +23,22 @@ body {
 header {
     height: 8vh;
     background-color: aliceblue;
-    text-align: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+header .weather {
+    font-size: 15px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+header .time {
+    position: absolute;
+    top: 15px;
+    right: 10px;
 }
 
 header h1 {
